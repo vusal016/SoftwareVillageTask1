@@ -1,0 +1,9 @@
+﻿global using AutoMapper;
+global using Weather.BLL.Dtos;
+global using Weather.CORE.Entities;
+global using Weather.BLL.Exceptions;
+global using Weather.BLL.Interfaces;
+global using Weather.CORE.Repository;
+global using Microsoft.Extensions.DependencyInjection;
+global using Weather.BLL.Mapper;
+global using Weather.BLL.Services;

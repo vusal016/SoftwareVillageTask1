@@ -1,0 +1,10 @@
+﻿global using Weather.CORE.Entities.Common;
+global using Weather.CORE.Repository;
+global using Weather.DAL.Data;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Weather.DAL.Repository;
+global using Weather.CORE.Entities;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Weather.DAL.Data.Seed;
