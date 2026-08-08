@@ -37,17 +37,5 @@
                 throw new ArgumentException("Country name cannot be null or empty.");
             CountryName = countryName;
         }
-        //public void UpdateCityName(string name)
-        //{
-        //    SetName(name);
-        //}
-        //public void UpdateCountryCode(string countryCode)
-        //{
-        //    SetCountryCode(countryCode);
-        //}
-        //public void UpdateCountryName(string countryName)
-        //{
-        //    SetCountryName(countryName);
-        //}
     }
 }

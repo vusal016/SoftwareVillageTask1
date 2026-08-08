@@ -1,6 +1,6 @@
 ﻿namespace Weather.DAL.Data
 {
-    public class WeatherDB(DbContextOptions<WeatherDB> options):DbContext
+    public class WeatherDB(DbContextOptions<WeatherDB> options):DbContext(options)
     {
         public DbSet<City> Cities { get; set; }
         public DbSet<CurrentWeather> CurrentWeathers { get; set; }

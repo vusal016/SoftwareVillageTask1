@@ -2,7 +2,7 @@ namespace WeatherAPI
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -37,7 +37,13 @@ namespace WeatherAPI
             app.UseHttpsRedirection();
 
             app.UseCors("AllowFrontend");
+
+            using var scope = app.Services.CreateScope();
+            var dataIntializer = scope.ServiceProvider.GetRequiredService<DataSeeder>();
+            await dataIntializer.Initialize();
+
             app.UseMiddleware<ExceptionHandler>();
+
             app.UseAuthorization();
 
             app.MapControllers();
@@ -46,3 +52,4 @@ namespace WeatherAPI
         }
     }
 }
+
