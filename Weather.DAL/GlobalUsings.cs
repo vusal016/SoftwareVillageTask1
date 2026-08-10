@@ -1,5 +1,4 @@
-﻿global using Weather.CORE.Entities.Common;
-global using Weather.CORE.Repository;
+﻿global using Weather.CORE.Repository;
 global using Weather.DAL.Data;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.Extensions.Configuration;

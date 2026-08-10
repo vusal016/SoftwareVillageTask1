@@ -6,3 +6,4 @@ global using Weather.BLL.Response;
 global using Microsoft.AspNetCore.Mvc;
 global using Weather.BLL.Dtos;
 global using Weather.BLL.Interfaces;
+global using Weather.DAL.Data.Seed;
