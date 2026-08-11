@@ -7,3 +7,8 @@ global using Microsoft.AspNetCore.Mvc;
 global using Weather.BLL.Dtos;
 global using Weather.BLL.Interfaces;
 global using Weather.DAL.Data.Seed;
+global using System.Reflection;
+global using WeatherAPI.Swagger;
+global using Microsoft.OpenApi.Any;
+global using Microsoft.OpenApi.Models;
+global using Swashbuckle.AspNetCore.SwaggerGen;
